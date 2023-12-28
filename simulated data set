@@ -1,0 +1,71 @@
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+class SimulatedData {
+    private int id;
+    private String name;
+    private double value;
+
+    public SimulatedData(int id, String name, double value) {
+        this.id = id;
+        this.name = name;
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "SimulatedData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", value=" + value +
+                '}';
+    }
+}
+
+public class SimulatedDataSetGenerator {
+    public static void main(String[] args) {
+        // Generate a simulated data set with unique instances
+        Set<SimulatedData> dataSet = generateSimulatedDataSet(10);
+
+        // Display the generated data set
+        for (SimulatedData data : dataSet) {
+            System.out.println(data);
+        }
+    }
+
+    private static Set<SimulatedData> generateSimulatedDataSet(int size) {
+        Set<SimulatedData> dataSet = new HashSet<>();
+        Random random = new Random();
+
+        for (int i = 1; i <= size; i++) {
+            int id = i;
+            String name = "Item" + i;
+            double value = random.nextDouble() * 100; // Generating a random value
+
+            SimulatedData data = new SimulatedData(id, name, value);
+
+            // Check for uniqueness before adding to the set
+            while (!dataSet.add(data)) {
+                // If not unique, regenerate the values
+                id = random.nextInt(size) + 1;
+                name = "Item" + id;
+                value = random.nextDouble() * 100;
+                data = new SimulatedData(id, name, value);
+            }
+        }
+
+        return dataSet;
+    }
+}
+
+//o:SimulatedData{id=8, name='Item8', value=23.567710261716368}
+SimulatedData{id=7, name='Item7', value=34.13723698154711}
+SimulatedData{id=2, name='Item2', value=29.20089887383045}
+SimulatedData{id=4, name='Item4', value=51.22951425004676}
+SimulatedData{id=6, name='Item6', value=47.294018995266505}
+SimulatedData{id=1, name='Item1', value=19.011869247302005}
+SimulatedData{id=3, name='Item3', value=15.945108739081537}
+SimulatedData{id=9, name='Item9', value=96.85220351518127}
+SimulatedData{id=10, name='Item10', value=79.83428737650424}
+SimulatedData{id=5, name='Item5', value=3.351696373741009}
