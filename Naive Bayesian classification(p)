@@ -31,19 +31,16 @@ print(metrics.classification_report(y_test, y_pred))
 # Confusion matrix
 print("\nConfusion Matrix:")
 print(metrics.confusion_matrix(y_test, y_pred))
-//o:Classification Report:
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00        19
-           1       1.00      0.92      0.96        13
-           2       0.93      1.00      0.96        13
-
-    accuracy                           0.98        45
-   macro avg       0.98      0.97      0.97        45
-weighted avg       0.98      0.98      0.98        45
-
-
-Confusion Matrix:
-[[19  0  0]
- [ 0 12  1]
- [ 0  0 13]]
+#o:Classification Report:
+#              precision    recall  f1-score   support
+#
+#          0       1.00      1.00      1.00        19
+#           1       1.00      0.92      0.96        13
+#          2       0.93      1.00      0.96        13
+#    accuracy                           0.98        45
+#  macro avg       0.98      0.97      0.97        45
+# weighted avg       0.98      0.98      0.98        45
+#Confusion Matrix:
+#[[19  0  0]
+#[ 0 12  1]
+#[ 0  0 13]]
