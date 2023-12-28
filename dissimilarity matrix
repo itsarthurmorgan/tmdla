@@ -24,8 +24,8 @@ for i in range(num_instances):
 # Display dissimilarity matrix
 print("Dissimilarity Matrix:")
 print(dissimilarity_matrix)
-//o:Dissimilarity Matrix:
-[[0.         3.39705755 1.13137085 2.88617394]
- [3.39705755 0.         3.62491379 1.86815417]
- [1.13137085 3.62491379 0.         2.5       ]
- [2.88617394 1.86815417 2.5        0.        ]]
+#o:Dissimilarity Matrix:
+#[[0.         3.39705755 1.13137085 2.88617394]
+#[3.39705755 0.         3.62491379 1.86815417]
+# [1.13137085 3.62491379 0.         2.5       ]
+# [2.88617394 1.86815417 2.5        0.        ]]
