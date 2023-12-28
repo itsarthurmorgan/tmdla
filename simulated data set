@@ -59,13 +59,13 @@ public class SimulatedDataSetGenerator {
     }
 }
 
-#o:SimulatedData{id=8, name='Item8', value=23.567710261716368}
-#SimulatedData{id=7, name='Item7', value=34.13723698154711}
-#SimulatedData{id=2, name='Item2', value=29.20089887383045}
-#SimulatedData{id=4, name='Item4', value=51.22951425004676}
-#SimulatedData{id=6, name='Item6', value=47.294018995266505}
-#SimulatedData{id=1, name='Item1', value=19.011869247302005}
-#SimulatedData{id=3, name='Item3', value=15.945108739081537}
-#SimulatedData{id=9, name='Item9', value=96.85220351518127}
-#SimulatedData{id=10, name='Item10', value=79.83428737650424}
-#SimulatedData{id=5, name='Item5', value=3.351696373741009}
+//o:SimulatedData{id=8, name='Item8', value=23.567710261716368}
+//SimulatedData{id=7, name='Item7', value=34.13723698154711}
+//SimulatedData{id=2, name='Item2', value=29.20089887383045}
+//SimulatedData{id=4, name='Item4', value=51.22951425004676}
+//SimulatedData{id=6, name='Item6', value=47.294018995266505}
+//SimulatedData{id=1, name='Item1', value=19.011869247302005}
+//SimulatedData{id=3, name='Item3', value=15.945108739081537}
+//SimulatedData{id=9, name='Item9', value=96.85220351518127}
+//SimulatedData{id=10, name='Item10', value=79.83428737650424}
+//SimulatedData{id=5, name='Item5', value=3.351696373741009}
