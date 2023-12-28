@@ -7,12 +7,12 @@ print(observed_data)
 chi_square_result <- chisq.test(observed_data) 
 print("\nChi-Square Test Results:") 
 print(chi_square_result)
-//o:[1] "Observed Data: "
-Category 1 Category 2
-Group A         30         10
-Group B         20         40
-[1] "\nChi-Square Test Results:"
-Pearson's Chi-squared test with Yates' continuity correction
+#o:[1] "Observed Data: "
+#Category 1 Category 2
+#Group A         30         10
+#Group B         20         40
+#[1] "\nChi-Square Test Results:"
+#Pearson's Chi-squared test with Yates' continuity correction
 
-data:  observed_data
-X-squared = 15.042, df = 1, p-value = 0.0001052
+#data:  observed_data
+#X-squared = 15.042, df = 1, p-value = 0.0001052
